@@ -45,7 +45,9 @@ pip install -r requirements.txt
 
 3. Update the base_directory path in the script to point to your dataset's base directory:
 
-`base_directory = Path("/path/to/your/base/regions/directory")`
+```
+base_directory = Path("/path/to/your/base/regions/directory")
+```
 
 ---
 

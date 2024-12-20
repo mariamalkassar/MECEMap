@@ -3,14 +3,14 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
-
+.idea
+.idea/
 /.idea/
 /MECEMap/venv
 
 *.DS_Store
 
-# JetBrains IDE
-.idea/
+
 
 __pycache__/
 
