@@ -3,9 +3,8 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
-.idea
-.idea/
-/.idea/
+#.idea/
+#/.idea/
 /MECEMap/venv
 
 *.DS_Store
