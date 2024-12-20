@@ -28,10 +28,11 @@ def remove_all_files(directory_path):
     Parameters:
     - directory_path (str): The path of the directory containing files to be removed.
     """
-    for filename in os.listdir(directory_path):
-        file_path = os.path.join(directory_path, filename)
-        if os.path.isfile(file_path):
-            os.remove(file_path)
+    if os.path.isdir(directory_path):
+        for filename in os.listdir(directory_path):
+            file_path = os.path.join(directory_path, filename)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
 
 
 def parse_anatomical_structures_txt_file(txt_file_path, regions_path):
