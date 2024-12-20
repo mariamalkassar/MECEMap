@@ -31,19 +31,24 @@ Make sure you have the following installed:
 
 # Setup
 1. Clone the repository:
+
 `git clone https://github.com/mariamalkassar/MECEMap.git
 cd mece-kunst-regions-processor`
 
 2. Install dependencies:
+
 `pip install -r requirements.txt`
 
 3. Update the base_directory path in the script to point to your dataset's base directory:
+
 `base_directory = Path("/path/to/your/base/regions/directory")`
 
 ---
 
 # Usage
 To run the processing pipeline, simply execute the script:
+
+
 `
 cd /To/Your/MECEMap/Directory
 python3 -m anatomical_regions_mece
@@ -61,7 +66,8 @@ The pipeline will perform the following steps:
 
 # Directory Structure
 Expected directory structure for the input dataset:
-`
+
+```
 /path/to/your/base/regions/directory
 ├── 0_anatomical_structures_list/
 │   └── anatomical_structures_list.txt
@@ -69,9 +75,10 @@ Expected directory structure for the input dataset:
 │   ├── region_stack_1.tif
 │   ├── region_stack_2.tif
 │   └── ...
-`
+```
 Output directories:
-`
+
+```
 /path/to/your/base/regions/directory
 ├── 2_smoothed_leaves_regions/
 │   ├── region_stack_1.tif
@@ -97,4 +104,4 @@ Output directories:
 │   ├── sagittal_region_stack_1.tif
 │   ├── sagittal_region_stack_2.tif
 │   └── ...
-`
+```
