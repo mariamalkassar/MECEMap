@@ -32,12 +32,16 @@ Make sure you have the following installed:
 # Setup
 1. Clone the repository:
 
-`git clone https://github.com/mariamalkassar/MECEMap.git
-cd mece-kunst-regions-processor`
+```
+git clone https://github.com/mariamalkassar/MECEMap.git
+cd mece-kunst-regions-processor
+```
 
 2. Install dependencies:
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 3. Update the base_directory path in the script to point to your dataset's base directory:
 
@@ -49,10 +53,12 @@ cd mece-kunst-regions-processor`
 To run the processing pipeline, simply execute the script:
 
 
-`
+```
 cd /To/Your/MECEMap/Directory
 python3 -m anatomical_regions_mece
-`
+```
+
+
 The pipeline will perform the following steps:
 1. Smooth boundaries: Processes raw TIFF files in the 1_leaves_regions directory and outputs smoothed TIFF files in 2_smoothed_leaves_regions.
 2. Combine TIFFs: Creates a combined 8-bit grayscale TIFF file for all regions and saves it as 2_smoothed_leaves_regions.tif.
